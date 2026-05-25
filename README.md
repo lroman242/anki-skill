@@ -6,12 +6,30 @@ A Claude Code skill for managing Anki flashcards during coding sessions. Create,
 
 Bad cards are the real problem with Anki — vague fronts, bloated backs, and trivia that doesn't stick. This skill enforces quality rules so every card is atomic, minimal, and worth remembering long-term.
 
+## Usage scenarios
+
+**During a coding session** — you hit a gotcha, learn a new concept, or want to remember a pattern. Ask Claude to add it to Anki mid-session without breaking your flow:
+> *"/anki add this — the difference between `INNER JOIN` and `LEFT JOIN` when one side has NULLs"*
+
+**Learning a topic with Claude** — you're exploring something new and want to retain the key ideas. Ask Claude to build a deck from the conversation:
+> *"/anki we just covered B-trees, LSM trees, and SSTables. Create a deck with the most important things to remember for future review."*
+
+**Interview prep** — work through a problem with Claude, then have it card the patterns and techniques used, organized by topic deck:
+> *"/anki we just solved a sliding window problem — card the pattern and when to recognize it"*
+
+**Kata exercises** — store implementation exercises as cards to revisit on a daily or weekly schedule. The front describes the task, the back holds key constraints or hints. Build a personal training deck over time:
+> *"/anki add a kata — implement a worker pool with a fixed concurrency limit and graceful shutdown"*
+> *"/anki add a kata — implement an LRU cache with O(1) get and put"*
+> *"/anki add a kata — implement a fan-in function that merges multiple channels into one"*
+
+Claude proposes each card, you approve, and it lands in Anki. No copy-paste, no switching apps.
+
 ## How it works
 
-1. You're coding with Claude Code and learn something new
-2. Claude notices and proposes a flashcard (or you invoke `/anki`)
-3. You review the front, back, deck, and tags
-4. On approval, the card is created, updated, or deleted in Anki via AnkiConnect
+1. You're coding or learning with Claude Code
+2. Claude notices something worth remembering, or you invoke `/anki`
+3. Claude proposes the card — front, back, deck, and tags
+4. On approval, the card is added to Anki via AnkiConnect
 
 No dependencies — just `curl`, which is pre-installed on macOS and Ubuntu.
 
