@@ -2,10 +2,6 @@
 
 A Claude Code skill for managing Anki flashcards during coding sessions. Create, update, delete, and browse cards without leaving the terminal. When you're learning something new — a concept, gotcha, or mental model — Claude proposes a card, you approve it, and it's in your deck.
 
-## Why
-
-Bad cards are the real problem with Anki — vague fronts, bloated backs, and trivia that doesn't stick. This skill enforces quality rules so every card is atomic, minimal, and worth remembering long-term.
-
 ## Usage scenarios
 
 **During a coding session** — you hit a gotcha, learn a new concept, or want to remember a pattern. Ask Claude to add it to Anki mid-session without breaking your flow:
